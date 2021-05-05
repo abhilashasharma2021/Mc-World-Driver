@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.CreateAcctOrLoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_next"
+         android:id="@+id/ll"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/os_semibold"
+            android:text="Enter your email "
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/os_regular"
+            android:text="Enter your email address ,to create an account"
+            android:textSize="14sp" />
+
+
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/os_regular"
+            android:hint="Enter your email address"
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:textColorHint="@color/black"
+            android:paddingBottom="25dp"
+            android:textSize="16sp" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/alreadyAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Already have an account ? Login"
+            android:textColor="@color/black"
+            android:fontFamily="@font/os_semibold"
+            android:textSize="14sp" />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/yellow"
+        android:text="NEXT"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progress"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:SpinKit_Color="@color/colorAccent"
+        android:visibility="gone"/>
+
+</RelativeLayout>

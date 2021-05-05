@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.UpdateLicenseActivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:padding="2dp"
+        android:src="@drawable/backarrow" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_update"
+        android:layout_below="@id/back">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            android:padding="15dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/os_semibold"
+                android:text="Update your Driving License"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/os_regular"
+                android:text="Please make sure that we can easily read all details"
+                android:textSize="14sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="7dp"
+                android:layout_marginTop="15dp"
+                app:cardElevation="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_height="150dp">
+
+                <ImageView
+                    android:id="@+id/frontLic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/licfront"/>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="7dp"
+                android:layout_marginTop="15dp"
+                app:cardElevation="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_height="150dp">
+
+                <ImageView
+                    android:id="@+id/backLic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/licback"/>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+            <EditText
+                android:id="@+id/licenseNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/os_regular"
+                android:hint="Driving License Number"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:paddingBottom="25dp"
+                android:textSize="16sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/etDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/os_regular"
+                    android:text="Driving License Expiry Date"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:textColorHint="@color/black"
+                    android:paddingEnd="10dp"
+                    android:layout_toLeftOf="@id/calender"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/calender"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/cale"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#B1B1B1"/>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/yellow"
+        android:text="UPDATE"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

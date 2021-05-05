@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ContactUsActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/back_white" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/os_semibold"
+            android:text="Contact Us"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rel">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/os_semibold"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/relName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:fontFamily="@font/os_regular"
+                android:hint="Your Name"
+                android:paddingEnd="10dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/os_semibold"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:fontFamily="@font/os_regular"
+                android:hint="Email"
+                android:paddingEnd="10dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/os_semibold"
+            android:text="Mobile Number"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+
+            <EditText
+                android:id="@+id/etNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:fontFamily="@font/os_regular"
+                android:hint="Mobile Number"
+                android:inputType="number"
+                android:paddingEnd="10dp"
+                android:maxLength="10"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/os_semibold"
+            android:text="Message"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+
+            <EditText
+                android:id="@+id/etMessage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:fontFamily="@font/os_regular"
+                android:hint="Enter your message here"
+                android:inputType="textMultiLine"
+                android:gravity="start"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/login_btn"
+            android:fontFamily="@font/os_semibold"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progress"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:SpinKit_Color="@color/colorAccent"
+        android:visibility="gone"/>
+
+</RelativeLayout>

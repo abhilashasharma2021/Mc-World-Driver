@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ProfileActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/back_white" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/os_semibold"
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_below="@id/rel">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/prf"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/prf2"
+                android:layout_centerHorizontal="true"
+                />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/camera"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@+id/prf"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="-15dp"
+                android:src="@drawable/camra"/>
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/os_semibold"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            >
+
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:fontFamily="@font/os_regular"
+                android:hint="Your Name"
+                android:paddingEnd="10dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/os_semibold"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            >
+
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:fontFamily="@font/os_regular"
+                android:hint="Email"
+                android:paddingEnd="10dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/os_semibold"
+            android:text="Mobile Number"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            >
+
+
+            <EditText
+                android:id="@+id/etNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:fontFamily="@font/os_regular"
+                android:hint="Mobile Number"
+                android:paddingEnd="10dp"
+                android:inputType="number"
+                android:maxLength="13"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+
+
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/login_btn"
+            android:fontFamily="@font/os_semibold"
+            android:text="UPDATE"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progress"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:SpinKit_Color="@color/colorAccent"
+        android:visibility="gone"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.OrderHistoryActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/back_white" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/os_semibold"
+            android:text="Order Detail"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                android:id="@+id/shopN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shop Name : "
+                android:textSize="16sp"
+                android:fontFamily="@font/os_semibold"
+                android:textColor="@color/black"/>
+
+
+                <TextView
+                    android:id="@+id/shopName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="16sp"
+                    android:layout_toEndOf="@id/shopN"
+                    android:fontFamily="@font/os_semibold"
+                    android:textColor="@color/black"/>
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/shopAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shop Name : "
+                    android:textSize="16sp"
+                    android:fontFamily="@font/os_semibold"
+                    android:textColor="@color/black"/>
+
+
+                <TextView
+                    android:id="@+id/shopAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="16sp"
+                    android:layout_toEndOf="@id/shopAdd"
+                    android:fontFamily="@font/os_semibold"
+                    android:textColor="@color/black"/>
+
+
+
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/Delieve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivered To : "
+                    android:textSize="16sp"
+                    android:fontFamily="@font/os_semibold"
+                    android:textColor="@color/black"/>
+
+
+                <TextView
+                    android:id="@+id/delievto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_toEndOf="@id/Delieve"
+                    android:fontFamily="@font/os_semibold"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/pr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product name : "
+                    android:textSize="16sp"
+                    android:fontFamily="@font/os_semibold"
+                    android:textColor="@color/black"/>
+
+
+                <TextView
+                    android:id="@+id/prdName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="16sp"
+                    android:layout_toEndOf="@id/pr"
+                    android:fontFamily="@font/os_semibold"
+                    android:textColor="@color/black"/>
+
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

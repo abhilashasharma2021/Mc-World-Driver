@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.FullNameActivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:padding="2dp"
+        android:src="@drawable/backarrow" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/txt"
+        android:layout_below="@id/back"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/os_semibold"
+            android:text="What's your name ? "
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/os_regular"
+            android:text="Your name helps captains to confirm who they're picking up"
+            android:textSize="14sp" />
+
+
+        <EditText
+            android:id="@+id/etFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/os_regular"
+            android:hint="Enter your fullname"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:paddingBottom="25dp"
+            android:textSize="16sp" />
+
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/os_regular"
+        android:text="By signing up with Mcworld25 you agree to our Term and Condtions"
+        android:textColor="#4881AF"
+        android:layout_above="@id/btn_next"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:textSize="14sp" />
+
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/yellow"
+        android:text="NEXT"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

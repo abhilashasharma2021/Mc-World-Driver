@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SettingsActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/back_white" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/os_semibold"
+            android:text="Settings"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+
+
+            <RelativeLayout
+                android:id="@+id/rel_aboutUs"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/os_semibold"
+                    android:paddingStart="20dp"
+                    android:text="About Us"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/forward"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="5dp"/>
+
+
+            </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rel_privacyPolicy"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/os_semibold"
+                android:paddingStart="20dp"
+                android:text="Privacy policy"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/forward"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:padding="5dp"/>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:background="@color/colorPrimaryDark"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rel_tc"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/os_semibold"
+                android:textSize="16sp"
+                android:paddingStart="20dp"
+                android:textColor="@color/black"
+                android:text="Terms &amp; Conditions"/>
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/forward"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:padding="5dp"/>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:background="@color/colorPrimaryDark"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rel_contactus"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/os_semibold"
+                android:paddingStart="20dp"
+                android:text="Contact Us"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/forward"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:padding="5dp"/>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:background="@color/colorPrimaryDark"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/os_semibold"
+                android:textSize="16sp"
+                android:paddingStart="20dp"
+                android:textColor="@color/black"
+                android:text="FAQ's"/>
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/forward"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:padding="5dp"/>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:background="@color/colorPrimaryDark"/>
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/rel_updateLicense"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/os_semibold"
+                android:textSize="16sp"
+                android:paddingStart="20dp"
+                android:textColor="@color/black"
+                android:text="Update Driving license"/>
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/forward"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:padding="5dp"/>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:background="@color/colorPrimaryDark"/>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rel_changePass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/os_semibold"
+                android:textSize="16sp"
+                android:paddingStart="20dp"
+                android:textColor="@color/black"
+                android:text="Change Password"/>
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/forward"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:padding="5dp"/>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:background="@color/colorPrimaryDark"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "728935131398",
+    "project_id": "eendhan-444a9",
+    "storage_bucket": "eendhan-444a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728935131398:android:e1b8f0361f375686a25687",
+        "android_client_info": {
+          "package_name": "com.eendhan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728935131398-9l19asf7u3f4q7i0nsj4mduprbmf23re.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.eendhan",
+            "certificate_hash": "ca007da018317fcfa2a4ba467e9c20b3fb979d62"
+          }
+        },
+        {
+          "client_id": "728935131398-5l68igf7mh2ule412cugaccoseuf2m21.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeww3aFvk6krfI-J7Vy6OaVLw4gaBrhwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728935131398-5l68igf7mh2ule412cugaccoseuf2m21.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
