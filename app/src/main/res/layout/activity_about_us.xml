@@ -28,7 +28,7 @@
             android:fontFamily="@font/os_semibold"
             android:text="About Us"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
 
     </RelativeLayout>
